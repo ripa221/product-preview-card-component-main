@@ -1,5 +1,114 @@
+:root {
+  --Green-500: hsl(158, 36%, 37%);
+  --Green-700: hsl(158, 42%, 18%);
+  --Black: hsl(212, 21%, 14%);
+  --Grey: hsl(228, 12%, 48%);
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+  --Blue: hsl(228, 45%, 44%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+.container {
+    font-family: "Montserrat",sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--Cream);
+}
+
+.card {
+    width: 100%;
+    max-width: 500px;
+    border: none;
+    border-radius: 18px;
+    background-color: var(--White);
+    box-shadow: 4px 10px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+.product-img {
+width: 50%;
+height: 100%;
+border-radius: 20px;
+
+} 
+
+.product-description-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.products {
+letter-spacing: 5px ;
+font-weight: 500;
+color: var(--Grey);
+}
+
+.product-name {
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+color: var(--Black);
+}
+
+.product-description {
+font-weight: 500;
+color: var(--Grey);
+}
+
+.price {
+    display: flex;
+    gap: 10px;
+}
+
+.current-price {
+     font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    color: var(--Green-500);
+}
+
+.previous-price {
+    color: var(--Grey);
+    font-weight: 500;
+
+}
+
+.add-cart {
+    background-color: var(--Green-500);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.add-cart:hover, .add-cart:active{
+    background-color: var(--Green-700);
+}
+
+
 
 /* Footer Section */
-.attribution { font-size: 0.6875rem; 
-    text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--Blue);
+}
