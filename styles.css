@@ -31,75 +31,109 @@ html {
 
 .card {
     width: 100%;
-    max-width: 500px;
+    max-width: 580px;
     border: none;
-    border-radius: 18px;
+    border-radius: 10px;
     background-color: var(--White);
-    box-shadow: 4px 10px 6px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    box-shadow: 2px 2px 5px var(--Cream);
+   
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    
     
 }
 
 .product-img {
 width: 50%;
-height: 100%;
-border-radius: 20px;
+display: block;
+
+border-radius: 10px 0 0 10px;
 
 } 
 
 .product-description-content {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+gap: 20px;
+    padding-inline:  30px;
 }
 
 .products {
 letter-spacing: 5px ;
+font-size: 0.8rem;
 font-weight: 500;
 color: var(--Grey);
 }
 
 .product-name {
     font-family: "Fraunces", sans-serif;
+    font-size: 2.2rem;
+    line-height: 1.1;
     font-weight: 700;
 color: var(--Black);
 }
 
 .product-description {
 font-weight: 500;
+font-size: 1rem;
 color: var(--Grey);
+line-height: 1.6;
+
+
+ 
 }
 
 .price {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .current-price {
-     font-family: "Fraunces", sans-serif;
+    font-family: "Fraunces", sans-serif;
     font-weight: 700;
+    font-size: 2rem;
     color: var(--Green-500);
 }
 
 .previous-price {
     color: var(--Grey);
     font-weight: 500;
+    font-size: 0.9rem;
+    padding-block-start: 10px;
 
+}
+
+.add-cart-img {
+    padding-inline-end: 5px;
 }
 
 .add-cart {
     background-color: var(--Green-500);
     color: var(--White);
+    font-family: inherit;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
     cursor: pointer;
 }
 
 .add-cart:hover, .add-cart:active{
     background-color: var(--Green-700);
+}
+
+@media(max-width:600px){
+    .card {
+        flex-direction: column;
+        max-width:350px;
+      
+    }
+    .product-img {
+        width: 100%;
+    }
 }
 
 
