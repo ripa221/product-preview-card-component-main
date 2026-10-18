@@ -21,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/ripa221/product-preview-card-component-main 
+- Live Site URL: https://ripa221.github.io/product-preview-card-component-main/
 
 ## My process
 
